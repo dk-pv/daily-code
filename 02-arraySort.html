@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        let fruits=['orange','kiwi','banana','apple','chikku']
+        console.log(fruits.sort());  
+        // out put : ['apple', 'banana', 'chikku', 'kiwi', 'orange']
+        console.log(fruits.reverse());
+        // out put : ['orange', 'kiwi', 'chikku', 'banana', 'apple']
+        
+        
+
+        let list = [10,20,30,40,50,60,5,8,915,]
+        console.log(list.sort())
+        // out put : [10, 20, 30, 40, 5, 50, 60, 8, 915]
+        console.log(list.reverse())
+        // out put : [915, 8, 60, 50, 5, 40, 30, 20, 10]
+        
+
+        let wow = [20,'hh',50,'a',55,'kk']
+        console.log(wow.sort());
+        // out put : [20, 50, 55, 'a', 'hh', 'kk']
+
+
+
+                    // in numbers list sorting solution (costom comparison function (use a function) )
+        let numbers = [10,20,30,40,50,60,5,8,915]
+        numbers.sort((x,y) => x-y);
+        console.log(numbers)
+       // out put : [5, 8, 10, 20, 30, 40, 50, 60, 915]
+
+       let numbers1 = [10,20,30,40,50,60,5,8,915]
+        numbers.sort((x,y) => y - x);
+        console.log(numbers1)
+        // out put : [915, 60, 50, 40, 30, 20, 10, 8, 5]
+
+
+
+
+                // sort method using multiple object ina list
+
+        const peoples = [{name:'dansih', age:20 , rank :3},
+                        {name:'javid', age:25 , rank :2},
+                        {name:'hrithik', age:28 , rank :1}]
+        console.log(peoples.sort());
+                        // out put : the order of same order
+        
+        
+        // arange name order method
+        const people = [{name:'dansih', age:20 , rank :3},
+                        {name:'javid', age:25 , rank :2},
+                        {name:'hrithik', age:28 , rank :1}]
+        people.sort((a,b) => a.name.localeCompare(b.name))
+        console.log(people);
+                         //  out put : 1st danish obj , 2nd hrithik obj,javid obj
+
+
+         // arange rank order method
+         const peopl = [{name:'dansih', age:20 , rank :3},
+                        {name:'javid', age:25 , rank :1},
+                        {name:'hrithik', age:28 , rank :2}]
+        peopl.sort((a,b) =>a.rank - b.rank)
+        console.log(peopl);
+
+
+        //arrange age order method
+        const peop = [{name:'dansih', age:20 , rank :3},
+                     {name:'javid', age:25 , rank :1},
+                     {name:'hrithik', age:28 , rank :2}]
+        peop.sort((a,b) =>b.age - a.age)
+        console.log(peop);
+        
+        
+
+
+        
+        
+        
+        
+
+
+        
+        
+
+        
+        
+
+    </script>
+</body>
+</html>

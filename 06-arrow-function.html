@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // normal function
+        function hlo(){
+            console.log('hemmo')
+        }
+        hlo()
+
+        //arrow function ( function store in variable it like anonymous function)
+        const dk = function(){
+            console.log("hello")
+        }
+        dk();
+
+        // another way to write arrow function (this write method only take one line of code inside the function)
+        const ku=() => console.log("danish kukku")
+        ku();
+
+        
+        const member = (name,place) => console.log(`hello mister ${name} you from ${place}`);
+        member('manu','kochi')
+
+        // print oooooooi after 5s 
+        setTimeout(callback,5000)
+        function callback(){
+            console.log("ooooooooi");
+        }
+
+
+        // print hello after 10s
+        setTimeout(() => console.log("HELLO")
+        ,10000)
+
+
+        //in this problem the inside the function 2 or more line
+        const person = (name, age , place) => {
+            console.log(`my name is ${name}`)
+            console.log(`i'm ${age} years old`);
+            console.log(`my home town in ${place}`);   
+        }
+        person('javid',25,'malappuram')
+
+
+        const number=[10,20,30,50,80,5,7,77,97]
+        const square = number.map
+    </script>
+</body>
+</html>

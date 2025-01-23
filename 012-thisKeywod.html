@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // it is point or target window object (just write 'this' keyword in a function and console .)
+        console.log(this);
+        function dk(){
+            console.log(this);
+        }
+        dk()
+
+
+
+        // 'this' keyword refers to the executing context of an object
+
+        let godsOwnContry = {
+            state : 'kerala',
+            contry : 'India',
+            population : '35 million',
+            Districts : 14,
+            CM : 'pinarayi Vijayan',
+            capital : 'Trivandrum',
+            get (){
+                console.log(this.state);
+                console.log(this.contry);
+                console.log(this.CM);
+                console.log(this.Districts);
+            }
+        }
+        godsOwnContry.get()
+
+
+//////////////////////////////////////////
+        let theLandofTemples= {
+            state : 'Tamil Nadu',
+            contry : 'India',
+            population : '76.993 million',
+            Districts : 38,
+            CM : 'M. K. Stalin',
+            capital : 'Chennai',
+            method : getvalue
+        }
+        let godsOwnContryy = {
+            state : 'kerala',
+            contry : 'India',
+            population : '35 million',
+            Districts : 14,
+            CM : 'pinarayi Vijayan',
+            capital : 'Trivandrum',
+            method : getvalue
+        }
+        function  getvalue(){
+            console.log(this.state)
+        }
+
+        godsOwnContryy.method();
+        theLandofTemples.method();
+
+
+
+
+        
+    </script>
+</body>
+</html>

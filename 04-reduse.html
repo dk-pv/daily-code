@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+        let numbers=[10,50,20,100,90,70,50]
+        numbers.forEach(display)
+        function display(x){   // call back function
+            console.log(x);
+        }
+        //out put like for loop
+
+
+
+
+
+        // double the array elements
+        let number=[10,50,20]
+
+        number.forEach(double)
+        number.forEach(display)
+
+        function double(element , index , array){
+            array[index] = element * 2
+        }
+        function display(element){   // call back function
+            console.log(element);
+        }
+
+
+
+        // squere the array element
+        let num=[10,50,20]
+
+        num.forEach(double)
+        num.forEach(display)
+
+        function double(element , index , array){
+            array[index] = Math.pow(element ,2)
+        }
+        function display(element){   // call back function
+            console.log(element);
+        }
+
+
+
+        // all element print in uppercase
+        let fruits = ['orange','pinapple','musambi','apple','mango','watermelo']
+        fruits.forEach(uppercase)
+        fruits.forEach(display)
+        function uppercase(element,index,array){
+            array[index] = element.toUpperCase()
+        }
+        function display(element){
+            console.log(element);
+        }
+
+
+        // capitalise the word
+        let fruitsList = ['orange','pinapple','musambi','apple','mango','watermelo']
+        fruitsList.forEach(uppercase)
+        fruitsList.forEach(display)
+        function uppercase(element,index,array){
+            array[index] = element.charAt(0).toUpperCase()  + element.slice(1)
+        }
+        function capitize(element){
+            console.log(element);
+        }
+
+
+
+    </script>
+    
+</body>
+</html>

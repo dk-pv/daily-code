@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        hello(goodbye)
+
+        function hello(callback){
+            console.log("helllo")
+            callback(hello);
+        }
+
+        function leave(){
+            console.log("leave!");
+            
+        }
+
+        function goodbye(){
+            console.log("goodbye man");
+            
+        }
+
+
+
+        function x(){
+            console.log("x is calledd");
+        }
+        x(function (){
+            console.log("anon called");
+            
+        })
+    </script>
+</body>
+</html>

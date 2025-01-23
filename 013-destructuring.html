@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                       // array destructuring
+
+        // this is the normal way to array values destructuring(ASSINING) in differents variables
+        let aray1 = ['kerala','malayalam',14,35000000]
+        let state = aray1[0]
+        let languege = aray1[0]
+        let district = aray1[0]
+        let population = aray1[0]
+
+        console.log(state);
+        console.log(languege);
+        console.log(district);
+        console.log(population);
+
+        // this the way to use array destructuring 
+
+        let aray2 = ['Tamilnadu','Tamil',38,7500000]
+        let [state2 , languege2 , district2 , population2] = aray2
+        console.log(state2);
+        console.log(languege2);
+        console.log(district2);
+        console.log(population2);
+
+
+        // using nested array
+        let aray3 = ['Karnataka' , 'Kannada' , 31 , 61130704 , ['bangalore' , 'Siddaramaiah' , 'KA'] ]
+        let [state3 , languege3 , district3 , population3 ,[Capital , chiefMinister , VehicleRegistration]] = aray3
+
+        console.log(state3);
+        console.log(languege3);
+        console.log(district3);
+        console.log(population3);
+        console.log(Capital);
+        console.log(chiefMinister);
+        console.log(VehicleRegistration);
+
+
+
+
+
+                    // object destructuring
+        // normal way
+        let kl = {
+            state : 'kerala',
+            contry : 'india',
+            airports : 4 ,
+            districts :14    
+        }
+        let statekl = kl.state
+        let contry = kl.contry
+        let airports = kl.airports
+        let populationkl = kl.districts
+
+        console.log(statekl);
+        console.log(contry);
+        console.log(airports);
+        console.log(populationkl);
+
+        // way to object destructuring
+
+        let TNobj = {
+            state : 'Tamilnadu',
+            contry : 'india',
+            airports : 8 ,
+            districts :38    
+        }
+        let [statetn , contrytn , airportstn , districtstn] =TNobj;
+
+        console.log(statetn);
+        console.log(contrytn);
+        console.log(airportstn);
+        console.log(populationtn);
+
+
+        // nested object
+
+        
+
+
+
+        
+        
+
+        
+
+        
+    </script>
+</body>
+</html>

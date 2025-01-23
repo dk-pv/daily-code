@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // array sample and methods
+
+        let ary = [20,50,"danishh","manjeri",true,false]
+        console.log(ary)
+        console.log(typeof ary[5]);
+        console.log(ary.length); // length of an array
+
+        // add a value in a array
+        ary[6]="kukku"  
+        console.log(ary)
+
+        console.log(ary.push(10)); // 10 add in last position in array
+
+        console.log(ary.unshift("my")); // my add in first position array
+
+        console.log(ary.shift());  // remove first position value in our array
+
+        console.log(ary.pop()) // remove last position value in our array
+        
+
+                     // add value in any position
+        let arayname=[10,20,40]
+        arayname.splice(2,0,30)  // 2 is which position you want , 0 is how many value you want remove after 2nd position , 30 is which value you want add
+        console.log(arayname);
+
+        let d =[10,15,888,40]
+        console.log(d.splice(1,2,30,40)) //in this problem remove 15 and 888 ,add 30 and 40 
+
+        //  add 2 array in single array
+        let add2Array=arayname.concat(ary)
+        console.log(add2Array);
+
+        // to check value index
+        let dk=[100,200,300,400,500]
+        console.log(dk.indexOf(500)); // out put is 4 (if you check a value not includes in array -> output is -1 )
+
+        // to know value include in array (output is boolean)
+        let x=[50,45,8,2,88]
+        console.log(x.includes(88));
+
+
+
+
+
+
+
+                // map
+        let arr = [3,4,5,8,72,4,6,]
+        arr.map((value,index) => {
+            console.log(value ,":", index)
+        })
+
+        arr.map((value,index)=>console.log(index ,":" ,value))
+
+        arr.map((value) => console.log(value))
+
+        arr.map((value,index)=>console.log(index ,":" ,value*2))
+
+        let result = arr.map((value) => value*3)
+        console.log(result)
+        
+
+               // filter
+
+        let m=[20,50,80,50,78,96,12]
+        m.filter((value,index) => console.log(index ,':',value));
+
+        m.filter((value) => console.log(value))
+
+        let above50 = m.filter((value) => value>50)
+        console.log(above50)     //print above 50 value
+
+
+        // for in loop
+        let values=[10,20,'kukku',true]
+        for(let z in values){
+            console.log(z)
+        }
+        let value=[10,20,'kukku',true]
+        for(let g of value){
+            console.log(g)
+        }
+
+        
+
+            
+
+
+        
+        
+
+
+
+
+
+    </script>
+</body>
+</html>

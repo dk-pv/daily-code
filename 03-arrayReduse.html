@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //  sum of the list 
+        const prices =[500,8246,78,52,5485,50]
+        const total = prices.reduce(sum)
+        console.log(total)
+        function sum(previosValue,nextValue){
+            return previosValue+nextValue
+        }
+
+
+        // find the lowest value
+        let numberlist = [500,4848,5,-500,-49]
+        let Value = numberlist.reduce(minmum)
+        console.log(Value);
+        
+        function minmum(a,b){
+            return Math.min(a,b)
+        }
+
+
+        // find the highest value
+        let numberlist2 = [500,4848,5,-500,-49]
+        let Valuemax = numberlist.reduce(maxvalue)
+        console.log(Valuemax);
+        
+        function maxvalue(a,b){
+            return Math.max(a,b)
+        }
+    </script>
+</body>
+</html>

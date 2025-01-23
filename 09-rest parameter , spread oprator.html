@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+                
+                    //spread oprator
+        
+        
+        let aray1 = [10,20,30]
+        let aray2 = [40,50,60]
+        let aray3 = [0,...aray1, ...aray2 , 70 , 80]
+        console.log(...aray3);
+
+
+
+        let obj1 = {
+            state : 'kerala',
+            capital : 'Trivandrum'
+        }
+        let obj2 = {
+            contry : 'India'
+        }
+        let obj3 = {
+            language : 'Malayalam'
+        }
+        let obj4 = {
+            districts : 14
+        }
+        let kerala = {...obj1 , ...obj2 , ...obj3 , ...obj4} 
+        
+
+
+
+        //
+
+        // function numbers(...nums){
+        //     console.log(nums);
+        // }
+        // numbers(20,40,50,80,70,50)
+
+
+        // function sum(num1,num2,...numss){
+        //     let result = 0
+        //     for (x of numss){
+        //         result=result+x
+        //         console.log(result+num1+num2); 
+        //     }
+        // }
+        // sum(20,70,50,60,70,80,90,100)
+
+        
+
+        
+          
+    </script>
+</body>
+</html>
